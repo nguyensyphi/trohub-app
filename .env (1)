@@ -1,0 +1,10 @@
+# todo: thêm các biến môi trường cho client
+# Google OAuth: thêm https://kit-famous-lightly.ngrok-free.app vào Authorized JavaScript origins
+VITE_CLIENT_GG_ID=1052397578030-p7503196ma6ere13t9h91dpnespfoh2p.apps.googleusercontent.com
+# API — cùng host public (ngrok → backend /api)
+# VITE_SERVER_URL=https://kit-famous-lightly.ngrok-free.app/api/v1
+VITE_SERVER_URL=http://localhost:5001/api/v1
+VITE_DROPBOX_API=
+VITE_EXCHANGERATE_API=
+VITE_PAYPAL_CLIENT_ID=
+VITE_PRICE_OF_POST_PER_DAY=

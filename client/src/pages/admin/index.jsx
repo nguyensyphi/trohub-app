@@ -1,0 +1,6 @@
+export { default as AdminLayout } from "./AdminLayout"
+export { default as AdminGeneral } from "./AdminGeneral"
+export { default as ManagePostAdmin } from "./ManagePost"
+export { default as ManageUser } from "./ManageUser"
+export { default as CreateNews } from "./news/CreateNews"
+export { default as ManageNews } from "./news/ManageNews"

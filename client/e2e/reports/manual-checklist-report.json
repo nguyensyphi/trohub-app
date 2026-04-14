@@ -1,0 +1,49 @@
+{
+  "visualResponsive": {
+    "mobile": {
+      "viewport": "iPhone 12/14",
+      "hasOverflowX": false,
+      "hasTextSpill": false,
+      "pass": true
+    },
+    "tablet": {
+      "viewport": "iPad",
+      "hasOverflowX": false,
+      "hasTextSpill": false,
+      "pass": true
+    }
+  },
+  "domEvents": {
+    "mobileHamburgerPresent": true,
+    "addressDropdownWorks": true,
+    "priceDropdownWorks": true,
+    "imageModalWorks": true,
+    "pass": true
+  },
+  "dataFlowForms": {
+    "loginFormSubmitted": true,
+    "searchFormInteracted": true,
+    "rentalRequestFormSubmitted": true,
+    "pass": true
+  },
+  "branding": {
+    "title": "Trohub",
+    "faviconHref": "/trohub.svg",
+    "headerBg": "rgb(26, 43, 76)",
+    "footerBg": "rgb(26, 43, 76)",
+    "primaryVar": "220 49% 20%",
+    "accentVar": "22 89% 54%",
+    "titleOk": true,
+    "faviconOk": true,
+    "colorConsistent": true,
+    "pass": true
+  },
+  "console": {
+    "consoleErrorCount": 0,
+    "pageErrorCount": 0,
+    "sampleConsoleErrors": [],
+    "hardRuntimeErrors": [],
+    "pass": true
+  },
+  "brokenComponents": []
+}

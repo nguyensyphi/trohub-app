@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 216 34% 97%;
+    --foreground: 220 35% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 35% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 35% 18%;
+
+    --primary: 220 49% 20%; /* #1A2B4C */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 216 30% 93%;
+    --secondary-foreground: 220 35% 18%;
+    --muted: 216 25% 92%;
+    --muted-foreground: 220 18% 35%;
+    --accent: 22 89% 54%; /* #F26522 */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%; /* #E2E8F0 */
+    --input: 214 30% 93%;
+    --ring: 22 89% 54%;
+
+    --chart-1: 220 49% 20%;
+    --chart-2: 22 89% 54%;
+    --chart-3: 214 52% 38%;
+    --chart-4: 18 82% 60%;
+    --chart-5: 210 44% 52%;
+    --radius: 4px;
+  }
+
+  .dark {
+    --background: 220 45% 10%;
+    --foreground: 214 33% 92%;
+    --card: 220 44% 12%;
+    --card-foreground: 214 33% 92%;
+    --popover: 220 44% 12%;
+    --popover-foreground: 214 33% 92%;
+
+    --primary: 214 56% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 25% 20%;
+    --secondary-foreground: 214 33% 92%;
+    --muted: 220 20% 17%;
+    --muted-foreground: 214 18% 70%;
+    --accent: 22 89% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 46%;
+    --destructive-foreground: 214 33% 92%;
+    --border: 220 18% 24%;
+    --input: 220 18% 26%;
+    --ring: 22 89% 54%;
+
+    --chart-1: 214 56% 64%;
+    --chart-2: 22 89% 54%;
+    --chart-3: 210 40% 50%;
+    --chart-4: 20 78% 58%;
+    --chart-5: 198 52% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Be Vietnam Pro", "Plus Jakarta Sans", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.005em;
+  }
+}
+
+@layer components {
+  .th-header-shell {
+    border-color: hsl(var(--border));
+    backdrop-filter: blur(4px);
+  }
+
+  .th-header-inner {
+    min-height: 40px;
+  }
+
+  .th-navigation-box {
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .th-footer-band {
+    letter-spacing: 0.01em;
+  }
+
+  .th-public-shell,
+  .th-owner-shell,
+  .th-admin-shell {
+    background-image: radial-gradient(circle at top right, hsl(var(--background)) 0%, transparent 45%);
+  }
+
+  .th-public-main,
+  .th-owner-layout,
+  .th-admin-layout {
+    isolation: isolate;
+  }
+
+  .th-owner-sidebar,
+  .th-admin-sidebar {
+    border-right: 1px solid hsl(var(--border));
+  }
+
+  .th-owner-content,
+  .th-admin-content {
+    padding: 0.25rem 0.35rem 0.5rem;
+  }
+
+  .th-search-shell,
+  .th-list-shell,
+  .th-section-shell {
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--card));
+  }
+
+  .th-filter-panel,
+  .th-filter-chipbar {
+    padding: 0.35rem;
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--background));
+  }
+
+  .th-map-panel,
+  .th-post-shell {
+    border: 1px solid hsl(var(--border));
+  }
+
+  .th-search-result,
+  .th-result-list {
+    min-height: 0;
+  }
+
+  .th-post-frame {
+    min-height: 175px;
+  }
+
+  .th-post-media {
+    border-right: 1px solid hsl(var(--border));
+  }
+
+  .th-post-content {
+    background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--background)) 100%);
+  }
+
+  .th-list-grid {
+    align-content: start;
+  }
+
+  svg.lucide {
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+}

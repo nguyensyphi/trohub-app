@@ -1,0 +1,8 @@
+
+> server@1.0.0 start
+> node index.js
+
+Twilio is not configured correctly. OTP SMS features are disabled.
+Server is running on the port 5001
+:::DB CONNECTED!
+^C

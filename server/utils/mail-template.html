@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trohub Email</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+  </head>
+  <body style="margin: 0; font-family: 'Questrial', sans-serif; background: #ffffff; font-size: 14px">
+    <div
+      style="
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 45px 30px 60px;
+        background: #f4f7ff;
+        background-image: url(https://img.freepik.com/premium-photo/background-texture_1258715-156124.jpg);
+        background-repeat: no-repeat;
+        background-size: 800px 452px;
+        background-position: top center;
+        font-size: 14px;
+        color: #434343;
+      "
+    >
+      <header>
+        <table style="width: 100%">
+          <tbody>
+            <tr style="height: 0">
+              <td
+                style="
+                  font-size: 36px;
+                  line-height: 40px;
+                  letter-spacing: 0.1em;
+                  color: blue;
+                  text-shadow: 1px 1px 1px black, 1px -1px 1px black, -1px 1px 1px black, -1px -1px 1px black;
+                "
+              >
+                TROHUB
+              </td>
+              <td style="text-align: right"></td>
+            </tr>
+          </tbody>
+        </table>
+      </header>
+
+      <main>
+        <div
+          style="
+            margin: 0;
+            margin-top: 70px;
+            padding: 92px 30px 115px;
+            background: #ffffff;
+            border-radius: 30px;
+            text-align: center;
+          "
+        >
+          <div style="width: 100%; max-width: 489px; margin: 0 auto">
+            <h1 style="margin: 0; font-size: 24px; font-weight: 500; color: #1f1f1f">Mã OTP của bạn</h1>
+            <p style="margin: 0; margin-top: 17px; font-weight: 500; letter-spacing: 0.56px">
+              Mã OTP có thời hạn là
+              <span style="font-weight: 600; color: #1f1f1f">5 phút</span>. Không được share mã code này với
+              bất cứ ai.
+            </p>
+            <p
+              style="
+                margin: 0;
+                margin-top: 60px;
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: 25px;
+                color: #ba3d4f;
+              "
+            >
+              {{OTP}}
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer
+        style="
+          width: 100%;
+          max-width: 490px;
+          margin: 20px auto 0;
+          text-align: center;
+          border-top: 1px solid #e6ebf1;
+        "
+      >
+        <p style="margin: 0; margin-top: 40px; font-size: 16px; font-weight: 600; color: #434343">
+          Trohub
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

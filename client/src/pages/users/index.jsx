@@ -1,0 +1,6 @@
+export { default as UserLayout } from "./UserLayout"
+export { default as ChangeEmail } from "./ChangeEmail"
+export { default as ChangePhone } from "./ChangePhone"
+export { default as Personal } from "./Personal"
+export { default as SeenPost } from "./SeenPost"
+export { default as Wishlist } from "./Wishlist"
